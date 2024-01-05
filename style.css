@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Alexandria', sans-serif;
+}
+
+body {
+    background-color: #f9eeff;
+}
+
+.main-container {
+    width: 50vw;
+    margin: 20px auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#header {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#head-title {
+    margin-right: 10px;
+}
+
+.ques-item{
+    border-bottom: 1px solid rgba(180, 173, 161, 0.36);
+}
+.accordion {
+    color: #311233;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: right;
+    outline: none;
+    font-size: 15px;
+    transition: 0.5s;
+    background-color: #fff;
+}
+
+.active,
+.accordion:hover {
+    background-color: #f9eeff;
+}
+
+/* + icon */
+.accordion:before {
+    content: url(images/plus-circle-fill.svg);
+    font-weight: bold;
+    float: left;
+    margin-left: 5px;
+}
+
+/*  - icon */
+.active:before {
+    content: url(images/dash-circle-fill.svg);
+}
+
+.panel {
+    padding: 0 18px;
+    line-height: 30px;
+    text-align: justify;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.panel *{
+    color: #5f5a60;
+    font-size: 12px;
+}
